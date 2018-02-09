@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Unit - Description - Lesson Plan</title>
+  </head>
+  <body>
+    <table class="center">
+      <tr>
+        <td>
+          <h1>Lesson Plan</h1>
+          
+          <h2 class="lp_topic">Topic</h2>
+          <p><b>Introduction to HTML</b></p>
+          
+          <h2 class="lp_outcomes">Outcomes (Objectives)</h2>
+          <p>On successful completion of this subject (unit) students will be able to,</p>
+          <ol>
+            <li>Understand the History of the Web</li>
+            <li>Understand Web Development Technologies and Tools</li>
+          </ol>
+
+          <h2 class="lp_materials">Materials</h2>
+          <p>Teaching references</p>
+          <ul>
+            <li></li>
+          </ul>
+
+          <p>Student resources</p>
+          <ul>
+            <li>Butchers paper for sketches</li>
+          </ul>
+
+          <h2 class="lp_procedures">Procedures</h2>
+
+          <p><b>Introduction to new concepts</b></p>
+          <ol>
+            <li></li>
+          </ol>
+
+          <p><b>Direct Instruction</b></p>
+          <i>Instructor led, in-front of class</i>
+
+          <p><b>History of the Web</b></p>
+          <ol>
+              <li>Explain the <a href="http://www.evolutionoftheweb.com/#/evolution/night">Evolution of the Web</a></li>
+              <li>Explain the <a href="https://web.archive.org/web/20180121075757/" target="_new">Internet Archive Wayback Machine</a></li>
+          </ol>
+
+          <p><b>Web Development Technologies and Tools</b></p>
+          <ol>
+            <li>Networking Models & Layers (OSI & TCP/IP Models & Error Codes)</li>
+            Ask students to:
+            <ul>
+              <li>Go through <a href="http://slideplayer.com/slide/4228479/">Intro to WWW Slides</a></li>
+                <p>Note: Topics include: Intro to WWW (Networks and Host Nodes), Server Types (including DNS), IP Addresses, Domain Names, Network Architecture (Client Server Model), Peer-to-peer (P2P) Architecture, Intranet vs Internet vs Extranet, Cloud Computing (IaaS, Paas, SaaS), Hypertext Documents, HTTP Messages & Method Types, Web Browsers and Web Servers, Web Application Architecture (Request/Response), Web Caches (Proxy Servers), HTTP Response Status Codes, TCP/IP, Standard Protocol Architectures, OSI Layered Reference Model (Standard Framework), HTML exchange request using HTTP, OSI vs TCP/IP, TCP/IP Protocol Graph, TCP/IP Boundaries</p>
+              <li>Explain HTTP Status Codes <img src="unit_html_intro/seo_http_status_codes.gif"></li>
+              <li>Read <a href="https://gradeup.co/application-layer-protocols-dns-smtp-pop-ftp-http-i-ba1194bd-c5ab-11e5-9dcb-5849de73f8e1">List of OSI Application Layer Protocols (HTTP, SMTP, POP, FTP)</a></li>
+            </ul>
+            <li>HTML</li>
+            Ask students to:
+            <ul>
+              <li>Read <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">Mozilla Introduction to HTML</a></li>
+              <li>Create and preview a basic HTML page <a href="https://www.w3schools.com/html/html5_intro.asp">HTML5 Intro</a></li>
+            </ul> 
+            <li>DOM, Global Objects (Window), Events</li>
+            Ask students to:
+            <ul>
+              <li><a href="https://www.w3schools.com/tags/tag_script.asp">Script Tag</a></li>
+              <li><a href="https://www.w3schools.com/jsref/event_onload.asp">Document OnLoad Event</a></li>
+            </ul>
+            <li>Character Encodings, Document Types, Meta Tags</li>
+              <a href="https://validator.w3.org/">HTML Markup Validator (Linter)</a>
+            <li>Browsers & Responsive Design & Refresh</li>
+            Ask students to:
+            <ul>
+              <li>Read <a href="https://developer.mozilla.org/en-US/docs/Archive/Web/Browser_Detection_and_Cross_Browser_Support">Browser Detection Sniffers with User Agent and Incompatibility Examples</a></li>
+              <li>Apply the Browser Detection Sample Code using Chrome Dev Tools Console</li>
+              <li>Try using Chrome Dev Tools Emulator. Open the Chrome Developer Tools (CMD+OPTION+I). Click the Toggle Device Toolbar icon (CMD+SHIFT+M). View Previews of a Webpage using difference Mobile and Desktop devices</li>
+              <li>Try <a href="https://www.browserstack.com/">Browserstack for Cross-Browser Compatibility Testing</a></li>
+            </ul>
+            <li>Polyfills vs Libraries (Fix Gaps in Functionality such as support for older browsers vs Improve Existing Functionality)</li>
+              Briefly discuss the difference
+            <li>Privacy with SSH (OSI Application Layer)</li>
+            Ask students to:
+            <ul>
+              <li>Show how we will use SSH to <a href="https://help.github.com/articles/connecting-to-github-with-ssh/">Connect to Github without supplying username/password each time from Command Line</a></li>
+            </ul>
+            <li>Sessions (OSI Session Layer)</li>
+            <li>Security with SSL Certificates & Protocols, TLS (OSI Presentation/Session Layer), HTTPS</li>
+            Ask students to:
+            <ul>
+              <li>Read <a href="https://www.symantec.com/page.jsp?id=ssl-information-center">Intro to SSL Certificates & Protocols, TLS (OSI Presentation/Session Layer), HTTPS</a></li>
+              <li>Show how <a href="https://letsencrypt.org/">Let's Encrypt (free, automated, and Open Certificate Authority</a> may be used for HTTPS on a Website, and how Heroku uses it for <a href="https://devcenter.heroku.com/articles/automated-certificate-management">Automated Certificate Management</a></li>
+            </ul>
+            <li>Security with Content Security Policies (CSP) to mitigate Cross-Site Scripting (XSS)</li>
+            Ask students to:
+            <ul>
+              <li>Evaluate the strength of a CSP using this <a href="https://csp-evaluator.withgoogle.com/">Google CSP Evaluator</a></li>
+              <li>Implement <a href="https://developers.google.com/web/fundamentals/security/csp/">Lockdown CSP Example</a>
+              by adding <code><meta http-equiv="Content-Security-Policy" content="default-src 'none'"></code> between the <code><head></head></code> HTML Tags of the HTML file
+              and then refresh the Webpage in the browser and view the Console in Chrome Dev Tools, which shows error
+              <code>Refused to apply inline style because it violates the following Content Security Policy directive: "default-src 'none'". 
+                Either the 'unsafe-inline' keyword, .... Note also that 'style-src' was not explicitly set, so 'default-src' is used as a fallback.</code>
+              </li>
+              <li>Challenge: Fix the error to allow inline Script and Style Tags over HTTPS using <a href="https://content-security-policy.com/">CSP Directives</a>
+                Solution: Add <code><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src https 'unsafe-inline'; script-src https 'unsafe-inline'"></code>
+              </li>
+            </ul>          
+            <li>Anonymity with HTTP & SOCKS Proxies (OSI Application Layer)</li>
+            <li>Web Crawlers, Robots File, and SEO</li>
+            <li>Debugging (Chrome Dev Tools)</li>
+              Show students a simple example:
+              <ul>
+                <li>Open Chrome Dev Tools. Go to "Sources" Tab. Create a New Snippet of Code: Sources > Snippets > New Snippet
+                  <code>
+                    var username = "Student"
+                    var welcomeMessage = `hello ${username}`;
+                    console.log(welcomeMessage);
+                  </code>
+                </li>
+                <li>Add a Breakpoint on the 2nd Line of code</li>
+                <li>
+                  Run the code. View the Console output. 
+                  Hover over <code>welcomeMessage</code> after breakpoint is triggered. 
+                  Enter <code>welcomeMessage</code> in the Console to show that the value 
+                  is stored in the variable of the Window Global scope <code>window.welcomeMessage</code>. 
+                  Inspect other variables in the Global scope in the right-hand side panel
+                </li>
+              </ul>
+              Ask students to:
+              <ul>
+                <li>Complete the <a href="https://www.codeschool.com/courses/discover-devtools">Discover Dev Tools course</a></li>
+                <li>Read the <a href="https://developers.google.com/web/tools/chrome-devtools/">Chrome Dev Tools documentation</a></li>
+              </ul>
+            <li>HTML 5 Canvas & Touch Event Listeners and Handlers for Tracking and Logs</li>
+              Ask students to:
+              <ul>
+                <li>Read Multi-touch Web Development Guide<a href="https://www.html5rocks.com/en/mobile/touch/"></a></li>
+                <li>Read Web API Docs on Touch Events<a href="https://developer.mozilla.org/en-US/docs/Web/API/Touch_events"></a></li>
+                <li>Download unit_html_intro/touch_events.html. Run a local Ruby web server from the same directory to host files in that folder on port 8000 with: <code>ruby -run -e httpd . -p 8000</code>. 
+                  Go to http://localhost:8000/unit_html_intro/touch_events.html in your browser. Open the Chrome Developer Tools (CMD+OPTION+I).
+                  Click the Toggle Device Toolbar icon (CMD+SHIFT+M). Click the "Initialise" Button in the DOM to setup the touch event listeners.
+                  Emulate Touch Events in the HTML 5 Canvas by holding down the mouse and draging it around.</li>
+                <li>Load your website using your web server using your IP Address from another students computer. Find out your Public IP Address with <code>ifconfig | grep inet</code> and run the website on another students computer. Open and Emulute Touch Events using the server on your computer
+                  but running it from their browser http://<YOUR_PUBLIC_IP_ADDRESS>:8000/unit_html_intro/touch_events.html</li>
+                <li>Load your website using your web server using a Domain Name generated by
+                  <a href="https://ngrok.com/" target="new">Ngrok</a> with <code>ngrok http 80</code>, which tunnels traffic from GET requests made to the domain name that they generate through to your local HTTP server
+                </li>
+                <li>Read the Vim Tutorial <code>vimtutorial</code></li>
+                <li>Edit the HTML file using Vim and observe changes or bugs produced</li>
+              </ul>
+            <li>HTML Drag & Drop API</li>  
+            Ask students to:
+            <ul>
+              <li>Read <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API">Drag and Drop Guide (drag events inherit from mouse events)</a></li>
+              <li>Challenge: Implement Drag & Drop using similar approach to the Touch Event example</li>
+              <li>Challenge: Implement <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API/File_drag_and_drop">File Drag & Drop</a> using similar approach to Touch Event example</li>
+            </ul>             
+            <li>DNS / IP Addresses, Request/Response</li>
+              Ask students to:
+              <ul>
+                <li>Show diagram of how DNS Server's map to IP address where files are hosted<img src="./unit_html_intro/dns_to_ip.gif"></a></li>
+                <li>Find the DNS information of a Domain Name in Terminal or in Web Browser <code>whois heroku.com</code></li>
+                <li>Show how Whois works <code>man whois</code></li>
+                <li>Trace the Route to an Host Name or given IP address with <code>traceroute google.com</code>, which
+                  shows the routers your packets travel through and how long it takes between each router. If the routers have DNS entries, 
+                  traceroute will list the router names and their geographic location.
+                </li>
+              </ul>
+            <li>Web Standards</li>
+              <a href="https://www.w3.org/standards/">WWW Organisations (W3C Standards)</a>
+            <li>Web Accessibility Guidelines</li>
+              Ask students to:
+              <ul>
+                <li>Read about <a href="https://www.w3.org/WAI/intro/accessibility.php">Web Accessibility</a></li>
+                <li>Identify <a href="https://www.w3.org/WAI/demos/bad/">Before and After usage of Web Accessibility on a Website</a></li>
+                <li>Update a HTML Website to use <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">ARIA Tags</a></li>
+                <li>Verify that ARIA Tags (i.e. alt tag used <code><img alt="a non existant image" src="./a.jpg"></code>)applied to images are read by <a href="https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en">ChromeVox Screen Reader</a></li>
+              </ul>
+            <li>CSS Animation & 3D Transforms</li>
+            Ask students to:
+            <ul>
+              <li>Read <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">Intro to CSS Animations</a></li>
+              <li>Show demos of <a href="https://css-tricks.com/almanac/properties/a/animation/">CSS Animations with Keyframes and Browser Compatibility</a></li>
+            </ul>
+            <li>Browser Local Storage, Databases, Caches, Cookies</li>
+            Ask students to:
+            <ul>
+              <li>Read about <a href="https://developers.google.com/web/tools/chrome-devtools/manage-data/local-storage">Browser Local Storage, Databases, Caches, Cookies</a></li>
+              <li>Show demos of:
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage">Set, Get, Remove Session Storage</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie">Setting a Cookie</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage">Setting Local Storage items</a>
+              </li>
+            </ul>
+            <li>Offline Web App Cache</li>
+            Ask students to:
+            <ul>
+              <li>Read about <a href="https://developers.google.com/web/tools/chrome-devtools/manage-data/local-storage">Offline Web App Cache</a></li>
+              <li>Try to implement: <a href="https://www.html5rocks.com/en/tutorials/appcache/beginner/">Offline Web App Cache</a>
+              </li>
+            </ul>
+            <li>Web Workers</li>
+          </ol>
+
+          <p><b>Guided Practice - Exercises In-Class (Canvas)</b></p>
+          <ol>
+            <li>Re-Design Process for an existing Website from Internet Archive Wayback Machine (IAWM)</li>
+            <ul>
+              <li>Choose a website</li>
+              <li>Compare the original and modern versions of the website</li>
+              <li>Write down the technologies and design techniques they changed and why</li>
+              <li>Choose a different website from IAWM to re-design yourself</li>
+              <li>Identify users of the site (target market)</li>
+              <li>List features your new site will need</li>
+              <li>Sketch the re-design on butchers paper</li>
+              <li>Create wireframe using software (i.e. Axure, Figma, Balsamiq, etc)</li>
+              <li>Research colours palette and typography to satisfy users (independent of product being sold)</li>
+              <li>Create mood board (i.e. with Pinterest)</li>
+              <li>Choose brand asset colours and typography based on your research and mood board</li>
+              <li>Explain justification for decisions make in the design process</li>
+            </ul>
+          </ol>
+
+          <p><b>Independent Practice - Homework</b></p>
+          <p>
+            <a id="">
+              HTML - <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content">Create a Structured Page of Content</a>
+            </a>
+            <ol>
+              <li>Prepare presentation explaining your Design Process and decisions you made</li>
+              <li>Follow the Research steps of the Re-Design Process ahead of your Portfolio project</li>
+            </ol>
+          </p>
+
+          <h2 class="lp_assessments">Assessments</h2>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+
+          <h2 class="lp_homework">Homework</h2>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+
+          <h2 class="lp_standards">Standards</h2>
+          <ol type="i">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+
+          <h2 class="lp_reflections">Reflections</h2>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <h2 class="lp_revision">Revision History</h2>
+          <table id="revision"> 
+            <tr>
+              <th width=5%>#</th>
+              <th width=30%>Author</th>
+              <th>Comment</th>
+            </tr>
+            <tr>
+              <td style="text-align: center">1</td>
+              <td>Author name: Luke Schoen</td>
+              <td>Original revision: 1</td>
+            </tr>
+          </table>
+        <td>
+      </tr>
+    </table>
+  </body>
+</html>
